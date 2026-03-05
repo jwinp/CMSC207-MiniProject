@@ -9,9 +9,7 @@ html{
 html{
     background-color: white;
 }
-main{
-    display: flex;
-}
+
 
 body{
     font-family: sans-serif;
@@ -34,6 +32,7 @@ nav{
 
 article{
     background-color: #FFD239;
+    float: left;
 }
 
 section{
@@ -45,10 +44,12 @@ aside{
     background-color: #1EADDF;
     width: 350px;
     padding: 15px;
+    float: left;
 }
 
 footer{
     background-color: #BA99C0;
+    clear:both;
 }
 
 nav ul {
