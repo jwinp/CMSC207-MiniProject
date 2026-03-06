@@ -1,17 +1,16 @@
-html{
-    box-sizing:border-box;
+html {
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-html{
+html {
     background-color: white;
 }
 
-
-body{
+body {
     font-family: sans-serif;
     background-color: white;
     color: #111111;
@@ -19,37 +18,14 @@ body{
     margin-right: auto;
     max-width: 1024px;
     min-width: 256px;
-
 }
 
-header{
+header {
     background-color: #F45556;
 }
 
-nav{
+nav {
     background-color: #FCAB68;
-}
-
-article{
-    background-color: #FFD239;
-    float: left;
-}
-
-section{
-    background-color: #88BB75;
-
-}
-
-aside{
-    background-color: #1EADDF;
-    width: 350px;
-    padding: 15px;
-    float: left;
-}
-
-footer{
-    background-color: #BA99C0;
-    clear:both;
 }
 
 nav ul {
@@ -62,6 +38,7 @@ nav ul {
     padding: 16px;
     display: flex;
     justify-content: flex-end;
+    margin: 0;
 }
 
 nav li {
@@ -71,33 +48,81 @@ nav li {
     padding-left: 8px;
 }
 
-nav ul li:last-child{
+nav ul li:last-child {
     border-right: none;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #111111
+    color: #111111;
 }
 
-nav li.selected{
-    color:#606060;
+nav li.selected {
+    color: #606060;
 }
 
-nav li a:hover{
+nav li a:hover {
     text-decoration: underline;
 }
 
-nav li a:link{
-    color:blue;
+nav li a:link {
+    color: blue;
 }
 
-nav li a:visited{
-    color:purple;
+nav li a:visited {
+    color: purple;
 }
 
-nav li a:active{
+nav li a:active {
     text-decoration: underline;
     background-color: black;
     color: white;
+}
+
+#display-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    background-color: #88BB75;
+    padding: 10px;
+}
+
+
+aside{
+    float: none;
+    width: 100%;
+    padding: 10px;
+}
+
+article{
+    float: none;
+    width: 100%;
+    padding: 10px;
+}
+
+footer {
+    background-color: #BA99C0;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media all and (min-width: 900px) {
+    aside {
+        float: left;
+        width: 35%;
+        padding: 15px;
+        background-color: #1EADDF;
+    }
+
+    article {
+        float: left;
+        width: 65%;
+        padding: 15px;
+        background-color: #FFD239;
+    }
 }
