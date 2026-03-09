@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Syne:wght@400..800&display=swap');
+
 html {
     box-sizing: border-box;
 }
@@ -21,16 +23,24 @@ body {
 }
 
 header {
-    background-color: #F45556;
+    background-color: white;
+    font-family: 'Syne', sans-serif;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
 nav {
-    background-color: #FCAB68;
+    background-color: white;
 }
 
 nav ul {
     list-style-type: none;
-    background-color: #B577B5;
+    background-color: #4b9599;
     border: 4px solid #111111;
     border-radius: 10px;
     font-family: sans-serif;
