@@ -41,7 +41,7 @@
         <div id="details">
             <h1>JHERWIN G. PINTO</h1>
             <h2>@jgpinto</h2>
-            <h3>About Me</h3>
+            <h3>ABOUT ME</h3>
             <p>Hello everyone! I am <strong>Jherwin</strong>, a 26-year-old computer programmer working in the
                 public sector. I graduated BS Computer Engineering from the University of the Philippines Diliman and am
                 currently
@@ -56,6 +56,28 @@
         <div id="content">
             <div id="reading">
                 <h2>Reading Album</h2>
+                <div>
+            <p><img id="reading-img" onclick="swapReading()" src="images/reading01.jpg" alt="Display Picture" width="400"
+                    height="400" /></p>
+        </div>
+        <script>
+            function swapReading() {
+                var imageDisplayed = document.getElementById('reading-img');
+                if (imageDisplayed.src.match("images/reading01.jpg")) {
+                    imageDisplayed.src = "images/reading02.jpg";
+                } else if (imageDisplayed.src.match("images/reading02.jpg")) {
+                    imageDisplayed.src = "images/reading03.jpg";
+                } else if (imageDisplayed.src.match("images/reading03.jpg")) {
+                    imageDisplayed.src = "images/reading04.jpg";
+                } else if (imageDisplayed.src.match("images/reading04.jpg")) {
+                    imageDisplayed.src = "images/reading05.jpg";
+                } else if (imageDisplayed.src.match("images/reading05.jpg")) {
+                    imageDisplayed.src = "images/reading06.jpg";
+                }else {
+                    imageDisplayed.src = "images/reading01.jpg";
+                } 
+            }
+        </script>
                 <p>One of my longtime hobbies is reading. Reading has always been a great way for me to relax, explore
                     imaginative
                     worlds, and stay inspired.
@@ -67,13 +89,6 @@
                     Some of my current favorites include Overgeared, Omniscient Reader's Viewpoint, and Myst, Might,
                     Mayhem.
                 </p>
-                <ul>
-                    <li>Percy Jackson and the Olympions</li>
-                    <li>The Heroes of Olympus</li>
-                    <li>Overgeared</li>
-                    <li>Omniscient Reader's Viewpoint</li>
-                    <li>Myst, Might, Mayhem</li>
-                </ul>
             </div>
             <div id="watching">
                 <h2>Watching Album</h2>
@@ -101,7 +116,7 @@
             </div>
             <div id="playing">
                 <h2>Playing Album</h2>
-                <p id="playing-gallery"><img id="display-image" onclick="swapImage()" src="images/image01.jpg" alt="Display Picture" height="100%" width="100%"/></p>
+                <p><img id="playing-img" onclick="swapImage()" src="images/image01.jpg" alt="Display Picture" height="400px" width="400px"/></p>
 
                 <p>I also enjoy playing video games in my free time. It’s one of my favorite ways to relax and have fun.
                     I play on my
@@ -127,7 +142,7 @@
         <p>You can reach me by contacting me on my email and following me on my social media: </p>
     </section>
     <footer>
-        CMSC 207 Mini-Project submitted by J
+        CMSC 207 Mini-Project submitted by Jherwin G. Pinto | March 2026
     </footer>
 </body>
 
