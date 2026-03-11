@@ -190,6 +190,12 @@ section {
     display: flex;
 }
 
+#reading img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
 #contact-info{
     text-align: justify;
 }
