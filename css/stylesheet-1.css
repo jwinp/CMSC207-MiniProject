@@ -196,6 +196,24 @@ section {
     display: block;
 }
 
+#watching img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+#listening img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+#playing img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
 #contact-info{
     text-align: justify;
 }
