@@ -15,9 +15,9 @@
                 <h1>WINstagram</h1>
             </div>
             <ul>
-                <li class="selected">Account</li>
-                <li class="selected">Settings</li>
-                <li class="selected">Logout</li>
+                <li class="selected"><a href="placeholders/account-placeholder.html">Account</a></li>
+                <li class="selected"><a href="placeholders/settings-placeholder.html">Settings</a></li>
+                <li class="selected"><a href="placeholders/logout-placeholder.html">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -48,15 +48,18 @@
 
             </p>
             <div id="more">
-            <button title="Click for Fun Fact!" onClick = "toggleFunFact()">More Information</button>
-            <p id="Funfact" style = "display:none;">Fun Fact: I have attended every DAY6 concert in the Philippines since 2018!</p>
+            <button id ="btnMore" title="Click for Fun Fact!" onClick = "toggleFunFact()">More Info</button>
+            <p id="Funfact" style = "display:none;">I have attended every DAY6 concert in the Philippines since 2018!</p>
             <script>
                 function toggleFunFact(){
                     var fact = document.getElementById("Funfact");
+                    var btn = document.getElementById("btnMore");
                     if(fact.style.display === "none"){
                         fact.style.display = "block";
+                        btn.innerText = "Fun Fact";
                     }else{
                         fact.style.display = "none";
+                        btn.innerText = "More Info"
                     }
                 }
             </script>
@@ -391,9 +394,10 @@
         <h1>CONTACT INFORMATION</h1>
         <p>You can reach me by contacting me on my email and following me on my social media: </p>
         <div>
-            <p>Email: <a href="mailto:jgpinto@example.com">jgpinto@example.com</a></p>
-            <p>Instagram: <a href="#">@jgpinto</a></p>
+            <p>Email: <a href="#">jgpinto@example.com</a></p>
+            <p>Tiktok: <a href="#">@jgpinto</a></p>
             <p>Twitter/X: <a href="#">@jgpinto</a></p>
+            <p>Facebook: <a href="#">@jgpinto</a></p>
         </div>
     </section>
     <footer>
