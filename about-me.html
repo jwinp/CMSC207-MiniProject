@@ -23,8 +23,7 @@
     </header>
     <section id="about-me">
         <div>
-            <p><img id="display-image" onclick="swapImage()" src="images/image01.jpg" alt="Display Picture" width="300"
-                    height="400" /></p>
+            <p><img id="display-image" onclick="swapImage()" src="images/image01.jpg" alt="Display Picture" /></p>
         </div>
         <script>
             function swapImage() {
@@ -39,15 +38,29 @@
             }
         </script>
         <div id="details">
-            <h1>JHERWIN G. PINTO</h1>
+            <h1>J</h1>
             <h2>@jgpinto</h2>
             <h3>ABOUT ME</h3>
-            <p>Hello everyone! I am <strong>Jherwin</strong>, a 26-year-old computer programmer working in the
+            <p>Hello everyone! I am <strong>J</strong>, a 26-year-old computer programmer working in the
                 public sector. I graduated BS Computer Engineering from the University of the Philippines Diliman and am
                 currently
                 pursuing a Master of Information Systems at the University of the Philippines Open University.
 
             </p>
+            <div id="more">
+            <button title="Click for Fun Fact!" onClick = "toggleFunFact()">More Information</button>
+            <p id="Funfact" style = "display:none;">Fun Fact: I have attended every DAY6 concert in the Philippines since 2018!</p>
+            <script>
+                function toggleFunFact(){
+                    var fact = document.getElementById("Funfact");
+                    if(fact.style.display === "none"){
+                        fact.style.display = "block";
+                    }else{
+                        fact.style.display = "none";
+                    }
+                }
+            </script>
+            </div>
         </div>
     </section>
 
@@ -55,8 +68,10 @@
         <h1>HOBBIES & INTERESTS GALLERY</h1>
         <div id="content">
             <div id="reading">
-                <h2>Reading</h2>
-                <img id="reading-img" onclick="swapReading()" src="images/reading01.jpg" alt="Display Picture - Reading" />
+
+                <img id="reading-img" onclick="swapReading()" src="images/reading01.jpg"
+                    alt="Display Picture - Reading" />
+                <p id="click"><em>Click to browse more photos!</em></p>
                 <script>
                     function swapReading() {
                         var imageDisplayed = document.getElementById('reading-img');
@@ -73,6 +88,52 @@
                         }
                     }
                 </script>
+                <div id="likesharesave">
+                    <h2>READING</h2>
+                    <div>
+                        <button id="like1" title= "Like" onclick="Liked1()"
+                            style='background-image:url("images/like-white.jpg")'></button>
+                        <script>
+                            function Liked1() {
+                                var liked1 = document.getElementById('like1');
+                                if (liked1.style.backgroundImage.includes("images/like-white.jpg")) {
+                                    liked1.style.backgroundImage = 'url("images/like-cyan.jpg")';
+                                    liked1.title = "Unlike";
+                                } else {
+                                    liked1.style.backgroundImage = 'url("images/like-white.jpg")'
+                                    liked1.title = "Like";
+                                }
+                            } </script>
+                        <button id="share1" title = "Share" onclick="Shared1()"
+                            style='background-image:url("images/share-white.jpg")'></button>
+                        <script>
+                            function Shared1() {
+                                var shared1 = document.getElementById('share1');
+                                if (shared1.style.backgroundImage.includes("images/share-white.jpg")) {
+                                    shared1.style.backgroundImage = 'url("images/share-cyan.jpg")';
+                                    shared1.title = "Unshare";
+                                } else {
+                                    shared1.style.backgroundImage = 'url("images/share-white.jpg")';
+                                    shared1.title = "Share";
+                                }
+                            } </script>
+
+                        <button id="save1" title = "Save" onclick="Saved1()"
+                            style='background-image:url("images/save-white.jpg")'></button>
+                        <script>
+                            function Saved1() {
+                                var saved1 = document.getElementById('save1');
+                                if (saved1.style.backgroundImage.includes("images/save-white.jpg")) {
+                                    saved1.style.backgroundImage = 'url("images/save-cyan.jpg")';
+                                    saved1.title = "Unsave";
+                                } else {
+                                    saved1.style.backgroundImage = 'url("images/save-white.jpg")';
+                                    saved1.title = "Save";
+                                }
+                            } </script>
+                    </div>
+                </div>
+
                 <p>One of my longtime hobbies is reading. Reading has always been a great way for me to relax, explore
                     imaginative
                     worlds, and stay inspired.
@@ -86,8 +147,10 @@
                 </p>
             </div>
             <div id="watching">
-                <h2>Watching</h2>
-                <img id="watching-img" onclick="swapWatching()" src="images/watching01.jpg" alt="Display Picture - Watching" />
+
+                <img id="watching-img" onclick="swapWatching()" src="images/watching01.jpg"
+                    alt="Display Picture - Watching" />
+                <p id="click"><em>Click to browse more photos!</em></p>
                 <script>
                     function swapWatching() {
                         var imageDisplayed = document.getElementById('watching-img');
@@ -101,42 +164,192 @@
                             imageDisplayed.src = "images/watching05.jpg";
                         } else if (imageDisplayed.src.match("images/watching05.jpg")) {
                             imageDisplayed.src = "images/watching06.jpg";
-                        }else if (imageDisplayed.src.match("images/watching06.jpg")) {
+                        } else if (imageDisplayed.src.match("images/watching06.jpg")) {
                             imageDisplayed.src = "images/watching07.jpg";
-                        }else {
+                        } else {
                             imageDisplayed.src = "images/watching01.jpg";
                         }
                     }
                 </script>
-                <p>I enjoy watching anime, K-dramas, and sitcoms during my free time because they help me relax and unwind after a busy day. 
-                    I am especially drawn to comedy, romantic comedy, and fantasy genres because they are entertaining, heartwarming, and sometimes inspiring. 
-                    Some of the shows I enjoy include Haikyuu, One Piece, Fairy Tail, Weightlifting Fairy Kim Bok Joo, Romantic Doctor Teacher Kim, The Big Bang Theory, and How I Met Your Mother.</p>
+
+                <div id="likesharesave">
+                    <h2>WATCHING</h2>
+                    <div>
+                        <button id="like2" title="Like" onclick="Liked2()"
+                            style='background-image:url("images/like-white.jpg")'></button>
+                        <script>
+                            function Liked2() {
+                                var liked2 = document.getElementById('like2');
+                                if (liked2.style.backgroundImage.includes("images/like-white.jpg")) {
+                                    liked2.style.backgroundImage = 'url("images/like-cyan.jpg")';
+                                    liked2.title = "Unlike";
+                                } else {
+                                    liked2.style.backgroundImage = 'url("images/like-white.jpg")';
+                                    liked2.title = "Like";
+                                }
+                            } </script>
+                        <button id="share2" title = "Share" onclick="Shared2()"
+                            style='background-image:url("images/share-white.jpg")'></button>
+                        <script>
+                            function Shared2() {
+                                var shared2 = document.getElementById('share2');
+                                if (shared2.style.backgroundImage.includes("images/share-white.jpg")) {
+                                    shared2.style.backgroundImage = 'url("images/share-cyan.jpg")';
+                                    shared2.title = "Unshare";
+                                } else {
+                                    shared2.style.backgroundImage = 'url("images/share-white.jpg")';
+                                    shared2.title = "Share";
+                                }
+                            } </script>
+
+                        <button id="save2" title = "Save" onclick="Saved2()"
+                            style='background-image:url("images/save-white.jpg")'></button>
+                        <script>
+                            function Saved2() {
+                                var saved2 = document.getElementById('save2');
+                                if (saved2.style.backgroundImage.includes("images/save-white.jpg")) {
+                                    saved2.style.backgroundImage = 'url("images/save-cyan.jpg")';
+                                    saved2.title = "Unsave";
+                                } else {
+                                    saved2.style.backgroundImage = 'url("images/save-white.jpg")';
+                                    saved2.title = "Save";
+                                }
+                            } </script>
+                    </div>
+                </div>
+
+                <p>I enjoy watching anime, K-dramas, and sitcoms during my free time because they help me relax and
+                    unwind after a busy day.
+                    I am especially drawn to comedy, romantic comedy, and fantasy genres because they are entertaining,
+                    heartwarming, and sometimes inspiring.
+                    Some of the shows I enjoy include Haikyuu, One Piece, Fairy Tail, Weightlifting Fairy Kim Bok Joo,
+                    Romantic Doctor Teacher Kim, The Big Bang Theory, and How I Met Your Mother.</p>
             </div>
             <div id="listening">
-                <h2>Listening</h2>
-                <img id="listening-img" onclick="swapListening()" src="images/listening01.jpg" alt="Display Picture - Listening" />
-                <script>
-                    function swapListening() {
-                        var imageDisplayed = document.getElementById('listening-img');
-                        if (imageDisplayed.src.match("images/listening01.jpg")) {
-                            imageDisplayed.src = "images/listening02.jpg";
-                        } else if (imageDisplayed.src.match("images/listening02.jpg")) {
-                            imageDisplayed.src = "images/listening03.jpg";
-                        } else if (imageDisplayed.src.match("images/listening03.jpg")) {
-                            imageDisplayed.src = "images/listening04.jpg";
-                        } else {
-                            imageDisplayed.src = "images/listening01.jpg";
+
+                <img id="listening-img" onclick="swapListening()" src="images/listening01.jpg"
+                    alt="Display Picture - Listening" />
+                <p id="click"><em>Click to browse more photos!</em></p>
+
+                <div id="likesharesave">
+                    <h2>LISTENING</h2>
+                    <div>
+                        <button id="like3" title = "Like" onclick="Liked3()"
+                            style='background-image:url("images/like-white.jpg")'></button>
+                        <script>
+                            function Liked3() {
+                                var liked3 = document.getElementById('like3');
+                                if (liked3.style.backgroundImage.includes("images/like-white.jpg")) {
+                                    liked3.style.backgroundImage = 'url("images/like-cyan.jpg")';
+                                    liked3.title = "Unlike";
+                                } else {
+                                    liked3.style.backgroundImage = 'url("images/like-white.jpg")';
+                                    liked3.title = "Like";
+                                }
+                            } </script>
+                        <button id="share3" onclick="Shared3()" title = "Share"
+                            style='background-image:url("images/share-white.jpg")'></button>
+                        <script>
+                            function Shared3() {
+                                var shared3 = document.getElementById('share3');
+                                if (shared3.style.backgroundImage.includes("images/share-white.jpg")) {
+                                    shared3.style.backgroundImage = 'url("images/share-cyan.jpg")';
+                                    shared3.title = "Unshare";
+                                } else {
+                                    shared3.style.backgroundImage = 'url("images/share-white.jpg")';
+                                    shared3.title = "Share";
+                                }
+                            } </script>
+
+                        <button id="save3" onclick="Saved3()" title="Save"
+                            style='background-image:url("images/save-white.jpg")'></button>
+                        <script>
+                            function Saved3() {
+                                var saved3 = document.getElementById('save3');
+                                if (saved3.style.backgroundImage.includes("images/save-white.jpg")) {
+                                    saved3.style.backgroundImage = 'url("images/save-cyan.jpg")';
+                                    saved3.title = "Unsave";
+                                } else {
+                                    saved3.style.backgroundImage = 'url("images/save-white.jpg")';
+                                    saved3.title = "Save";
+                                }
+                            } </script>
+                    </div>
+                    <script>
+                        function swapListening() {
+                            var imageDisplayed = document.getElementById('listening-img');
+                            if (imageDisplayed.src.match("images/listening01.jpg")) {
+                                imageDisplayed.src = "images/listening02.jpg";
+                            } else if (imageDisplayed.src.match("images/listening02.jpg")) {
+                                imageDisplayed.src = "images/listening03.jpg";
+                            } else if (imageDisplayed.src.match("images/listening03.jpg")) {
+                                imageDisplayed.src = "images/listening04.jpg";
+                            } else {
+                                imageDisplayed.src = "images/listening01.jpg";
+                            }
                         }
-                    }
-                </script>
+                    </script>
+                </div>
+
                 <p>I also enjoy listening to music in my free time. Lately, I’ve been into K-pop and OPM.
                     Although I still enjoy Western music, I find myself more drawn to the style, energy,
                     and emotion of K-pop and OPM songs. Some of my favorite artists recently include
-                    DAY6, TWICE, Maki, and Cup of Joe.</p>
+                    DAY6, TWICE, Maki, and Cup of Joe.
+                    It’s funny how their music affects my mood. I can be totally happy one minute and unexpectedly sad the next, all depending on the song.
+                </p>
+
             </div>
             <div id="playing">
-                <h2>Playing</h2>
-                <img id="playing-img" onclick="swapPlaying()" src="images/playing01.jpg" alt="Display Picture - Playing" />
+
+                <img id="playing-img" onclick="swapPlaying()" src="images/playing01.jpg"
+                    alt="Display Picture - Playing" />
+                <p id="click"><em>Click to browse more photos!</em></p>
+
+                <div id="likesharesave">
+                    <h2>PLAYING</h2>
+                    <div>
+                        <button id="like4" onclick="Liked4()" title="Like"
+                            style='background-image:url("images/like-white.jpg")'></button>
+                        <script>
+                            function Liked4() {
+                                var liked4 = document.getElementById('like4');
+                                if (liked4.style.backgroundImage.includes("images/like-white.jpg")) {
+                                    liked4.style.backgroundImage = 'url("images/like-cyan.jpg")';
+                                    liked4.title="Unlike";
+                                } else {
+                                    liked4.style.backgroundImage = 'url("images/like-white.jpg")';
+                                    liked4.title="Like";
+                                }
+                            } </script>
+                        <button id="share4" onclick="Shared4()" title = "Share"
+                            style='background-image:url("images/share-white.jpg")'></button>
+                        <script>
+                            function Shared4() {
+                                var shared4 = document.getElementById('share4');
+                                if (shared4.style.backgroundImage.includes("images/share-white.jpg")) {
+                                    shared4.style.backgroundImage = 'url("images/share-cyan.jpg")';
+                                    shared4.title = "Unlike";
+                                } else {
+                                    shared4.style.backgroundImage = 'url("images/share-white.jpg")';
+                                    shared4.title = "Like";
+                                }
+                            } </script>
+
+                        <button id="save4" onclick="Saved4()" title="Save"
+                            style='background-image:url("images/save-white.jpg")'></button>
+                        <script>
+                            function Saved4() {
+                                var saved4 = document.getElementById('save4');
+                                if (saved4.style.backgroundImage.includes("images/save-white.jpg")) {
+                                    saved4.style.backgroundImage = 'url("images/save-cyan.jpg")';
+                                    saved4.title = "Unsave";
+                                } else {
+                                    saved4.style.backgroundImage = 'url("images/save-white.jpg")';
+                                    saved4.title = "Save";
+                                }
+                            } </script>
+                    </div>
+                </div>
                 <script>
                     function swapPlaying() {
                         var imageDisplayed = document.getElementById('playing-img');
@@ -158,7 +371,8 @@
                     I play on my
                     Nintendo Switch and mobile phone.
 
-                    On my Nintendo Switch, I enjoy games like Pokémon Scarlet and Violet, Mario Kart and Naruto Shippuden: Ultimate
+                    On my Nintendo Switch, I enjoy games like Pokémon Scarlet and Violet, Mario Kart and Naruto
+                    Shippuden: Ultimate
                     Ninja Storm 4,
                     which I like because of their exciting battles, adventures, and characters.
 
@@ -176,9 +390,14 @@
     <section id="contact-info">
         <h1>CONTACT INFORMATION</h1>
         <p>You can reach me by contacting me on my email and following me on my social media: </p>
+        <div>
+            <p>Email: <a href="mailto:jgpinto@example.com">jgpinto@example.com</a></p>
+            <p>Instagram: <a href="#">@jgpinto</a></p>
+            <p>Twitter/X: <a href="#">@jgpinto</a></p>
+        </div>
     </section>
     <footer>
-        CMSC 207 Mini-Project submitted by Jherwin G. Pinto | March 2026
+       Mini-Project submitted by J | March 2026
     </footer>
 </body>
 
