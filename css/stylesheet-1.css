@@ -140,7 +140,7 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 13px;
+    font-size: 14px;
     padding-top: 10px;
     
 }
@@ -292,6 +292,8 @@ section {
 
 #contact-info{
     text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #contact-info h1{
@@ -307,6 +309,18 @@ footer {
     clear: both;
     padding: 10px;
     text-align: center;
+}
+
+.hover-effect:hover{
+    transform: scale(1.1);
+}
+
+.img-style{
+    width: 150px;
+}
+
+.btn-style{
+    padding: 10px;
 }
 
 

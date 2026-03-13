@@ -23,7 +23,7 @@
     </header>
     <section id="about-me">
         <div>
-            <p><img id="display-image" onclick="swapImage()" src="images/image01.jpg" alt="Display Picture" /></p>
+            <p><img id="display-image" class="hover-effect img-style" onclick="swapImage()" src="images/image01.jpg" alt="Display Picture" /></p>
         </div>
         <script>
             function swapImage() {
@@ -48,8 +48,8 @@
 
             </p>
             <div id="more">
-            <button id ="btnMore" title="Click for Fun Fact!" onClick = "toggleFunFact()">More Info</button>
-            <p id="Funfact" style = "display:none;">I have attended every DAY6 concert in the Philippines since 2018!</p>
+            <button id ="btnMore" class="hover-effect btn-style" title="Click for Fun Fact!" onClick = "toggleFunFact()">More Info</button>
+            <p id="Funfact" style = "display:none;">I have attended every DAY6 concert in the Philippines!</p>
             <script>
                 function toggleFunFact(){
                     var fact = document.getElementById("Funfact");
@@ -72,7 +72,7 @@
         <div id="content">
             <div id="reading">
 
-                <img id="reading-img" onclick="swapReading()" src="images/reading01.jpg"
+                <img id="reading-img" class="hover-effect img-style" onclick="swapReading()" src="images/reading01.jpg"
                     alt="Display Picture - Reading" />
                 <p id="click"><em>Click to browse more photos!</em></p>
                 <script>
@@ -94,7 +94,7 @@
                 <div id="likesharesave">
                     <h2>READING</h2>
                     <div>
-                        <button id="like1" title= "Like" onclick="Liked1()"
+                        <button id="like1" class="hover-effect btn-style" title= "Like" onclick="Liked1()"
                             style='background-image:url("images/like-white.jpg")'></button>
                         <script>
                             function Liked1() {
@@ -106,8 +106,8 @@
                                     liked1.style.backgroundImage = 'url("images/like-white.jpg")'
                                     liked1.title = "Like";
                                 }
-                            } </script>
-                        <button id="share1" title = "Share" onclick="Shared1()"
+                            } </script> 
+                        <button id="share1" title = "Share" onclick="Shared1()" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared1() {
@@ -121,7 +121,7 @@
                                 }
                             } </script>
 
-                        <button id="save1" title = "Save" onclick="Saved1()"
+                        <button id="save1" title = "Save" onclick="Saved1()" class="hover-effect btn-style"
                             style='background-image:url("images/save-white.jpg")'></button>
                         <script>
                             function Saved1() {
@@ -151,7 +151,7 @@
             </div>
             <div id="watching">
 
-                <img id="watching-img" onclick="swapWatching()" src="images/watching01.jpg"
+                <img id="watching-img" onclick="swapWatching()" class="hover-effect img-style" src="images/watching01.jpg"
                     alt="Display Picture - Watching" />
                 <p id="click"><em>Click to browse more photos!</em></p>
                 <script>
@@ -178,7 +178,7 @@
                 <div id="likesharesave">
                     <h2>WATCHING</h2>
                     <div>
-                        <button id="like2" title="Like" onclick="Liked2()"
+                        <button id="like2" title="Like" onclick="Liked2()" class="hover-effect btn-style"
                             style='background-image:url("images/like-white.jpg")'></button>
                         <script>
                             function Liked2() {
@@ -191,7 +191,7 @@
                                     liked2.title = "Like";
                                 }
                             } </script>
-                        <button id="share2" title = "Share" onclick="Shared2()"
+                        <button id="share2" title = "Share" onclick="Shared2()" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared2() {
@@ -205,7 +205,7 @@
                                 }
                             } </script>
 
-                        <button id="save2" title = "Save" onclick="Saved2()"
+                        <button id="save2" title = "Save" onclick="Saved2()" class="hover-effect btn-style"
                             style='background-image:url("images/save-white.jpg")'></button>
                         <script>
                             function Saved2() {
@@ -230,14 +230,14 @@
             </div>
             <div id="listening">
 
-                <img id="listening-img" onclick="swapListening()" src="images/listening01.jpg"
+                <img id="listening-img" onclick="swapListening()" src="images/listening01.jpg" class="hover-effect img-style"
                     alt="Display Picture - Listening" />
                 <p id="click"><em>Click to browse more photos!</em></p>
 
                 <div id="likesharesave">
                     <h2>LISTENING</h2>
                     <div>
-                        <button id="like3" title = "Like" onclick="Liked3()"
+                        <button id="like3" title = "Like" onclick="Liked3()" class="hover-effect btn-style"
                             style='background-image:url("images/like-white.jpg")'></button>
                         <script>
                             function Liked3() {
@@ -250,7 +250,7 @@
                                     liked3.title = "Like";
                                 }
                             } </script>
-                        <button id="share3" onclick="Shared3()" title = "Share"
+                        <button id="share3" onclick="Shared3()" title = "Share" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared3() {
@@ -264,7 +264,7 @@
                                 }
                             } </script>
 
-                        <button id="save3" onclick="Saved3()" title="Save"
+                        <button id="save3" onclick="Saved3()" title="Save" class="hover-effect btn-style"
                             style='background-image:url("images/save-white.jpg")'></button>
                         <script>
                             function Saved3() {
@@ -304,14 +304,14 @@
             </div>
             <div id="playing">
 
-                <img id="playing-img" onclick="swapPlaying()" src="images/playing01.jpg"
+                <img id="playing-img" onclick="swapPlaying()" src="images/playing01.jpg" class="hover-effect img-style"
                     alt="Display Picture - Playing" />
                 <p id="click"><em>Click to browse more photos!</em></p>
 
                 <div id="likesharesave">
                     <h2>PLAYING</h2>
                     <div>
-                        <button id="like4" onclick="Liked4()" title="Like"
+                        <button id="like4" onclick="Liked4()" title="Like" class="hover-effect btn-style"
                             style='background-image:url("images/like-white.jpg")'></button>
                         <script>
                             function Liked4() {
@@ -324,7 +324,7 @@
                                     liked4.title="Like";
                                 }
                             } </script>
-                        <button id="share4" onclick="Shared4()" title = "Share"
+                        <button id="share4" onclick="Shared4()" title = "Share" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared4() {
@@ -338,7 +338,7 @@
                                 }
                             } </script>
 
-                        <button id="save4" onclick="Saved4()" title="Save"
+                        <button id="save4" onclick="Saved4()" title="Save" class="hover-effect btn-style"
                             style='background-image:url("images/save-white.jpg")'></button>
                         <script>
                             function Saved4() {
