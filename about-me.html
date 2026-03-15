@@ -23,7 +23,8 @@
     </header>
     <section id="about-me">
         <div>
-            <p><img id="display-image" class="hover-effect img-style" onclick="swapImage()" src="images/image01.jpg" alt="Display Picture" /></p>
+            <p><img id="display-image" class="hover-effect img-style" onclick="swapImage()" src="images/image01.jpg"
+                    alt="Display Picture" /></p>
         </div>
         <script>
             function swapImage() {
@@ -38,31 +39,32 @@
             }
         </script>
         <div id="details">
-            <h1>J</h1>
+            <h1>JHERWIN G. PINTO</h1>
             <h2>@jgpinto</h2>
             <h3>ABOUT ME</h3>
-            <p>Hello everyone! I am <strong>J</strong>, a 26-year-old computer programmer working in the
+            <p>Hello everyone! I am <strong>Jherwin</strong>, a 26-year-old computer programmer working in the
                 public sector. I graduated BS Computer Engineering from the University of the Philippines Diliman and am
                 currently
                 pursuing a Master of Information Systems at the University of the Philippines Open University.
 
             </p>
             <div id="more">
-            <button id ="btnMore" class="hover-effect btn-style" title="Click for Fun Fact!" onClick = "toggleFunFact()">More Info</button>
-            <p id="Funfact" style = "display:none;">I have attended every DAY6 concert in the Philippines!</p>
-            <script>
-                function toggleFunFact(){
-                    var fact = document.getElementById("Funfact");
-                    var btn = document.getElementById("btnMore");
-                    if(fact.style.display === "none"){
-                        fact.style.display = "block";
-                        btn.innerText = "Fun Fact";
-                    }else{
-                        fact.style.display = "none";
-                        btn.innerText = "More Info"
+                <button id="btnMore" class="hover-effect btn-style" title="Click for Fun Fact!"
+                    onClick="toggleFunFact()">More Info</button>
+                <p id="Funfact" style="display:none;">I have attended every DAY6 concert in the Philippines!</p>
+                <script>
+                    function toggleFunFact() {
+                        var fact = document.getElementById("Funfact");
+                        var btn = document.getElementById("btnMore");
+                        if (fact.style.display === "none") {
+                            fact.style.display = "block";
+                            btn.innerText = "Fun Fact";
+                        } else {
+                            fact.style.display = "none";
+                            btn.innerText = "More Info"
+                        }
                     }
-                }
-            </script>
+                </script>
             </div>
         </div>
     </section>
@@ -94,7 +96,7 @@
                 <div id="likesharesave">
                     <h2>READING</h2>
                     <div>
-                        <button id="like1" class="hover-effect btn-style" title= "Like" onclick="Liked1()"
+                        <button id="like1" class="hover-effect btn-style" title="Like" onclick="Liked1()"
                             style='background-image:url("images/like-white.jpg")'></button>
                         <script>
                             function Liked1() {
@@ -106,8 +108,8 @@
                                     liked1.style.backgroundImage = 'url("images/like-white.jpg")'
                                     liked1.title = "Like";
                                 }
-                            } </script> 
-                        <button id="share1" title = "Share" onclick="Shared1()" class="hover-effect btn-style"
+                            } </script>
+                        <button id="share1" title="Share" onclick="Shared1()" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared1() {
@@ -121,7 +123,7 @@
                                 }
                             } </script>
 
-                        <button id="save1" title = "Save" onclick="Saved1()" class="hover-effect btn-style"
+                        <button id="save1" title="Save" onclick="Saved1()" class="hover-effect btn-style"
                             style='background-image:url("images/save-white.jpg")'></button>
                         <script>
                             function Saved1() {
@@ -151,8 +153,8 @@
             </div>
             <div id="watching">
 
-                <img id="watching-img" onclick="swapWatching()" class="hover-effect img-style" src="images/watching01.jpg"
-                    alt="Display Picture - Watching" />
+                <img id="watching-img" onclick="swapWatching()" class="hover-effect img-style"
+                    src="images/watching01.jpg" alt="Display Picture - Watching" />
                 <p id="click"><em>Click to browse more photos!</em></p>
                 <script>
                     function swapWatching() {
@@ -191,7 +193,7 @@
                                     liked2.title = "Like";
                                 }
                             } </script>
-                        <button id="share2" title = "Share" onclick="Shared2()" class="hover-effect btn-style"
+                        <button id="share2" title="Share" onclick="Shared2()" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared2() {
@@ -205,7 +207,7 @@
                                 }
                             } </script>
 
-                        <button id="save2" title = "Save" onclick="Saved2()" class="hover-effect btn-style"
+                        <button id="save2" title="Save" onclick="Saved2()" class="hover-effect btn-style"
                             style='background-image:url("images/save-white.jpg")'></button>
                         <script>
                             function Saved2() {
@@ -230,14 +232,14 @@
             </div>
             <div id="listening">
 
-                <img id="listening-img" onclick="swapListening()" src="images/listening01.jpg" class="hover-effect img-style"
-                    alt="Display Picture - Listening" />
+                <img id="listening-img" onclick="swapListening()" src="images/listening01.jpg"
+                    class="hover-effect img-style" alt="Display Picture - Listening" />
                 <p id="click"><em>Click to browse more photos!</em></p>
 
                 <div id="likesharesave">
                     <h2>LISTENING</h2>
                     <div>
-                        <button id="like3" title = "Like" onclick="Liked3()" class="hover-effect btn-style"
+                        <button id="like3" title="Like" onclick="Liked3()" class="hover-effect btn-style"
                             style='background-image:url("images/like-white.jpg")'></button>
                         <script>
                             function Liked3() {
@@ -250,7 +252,7 @@
                                     liked3.title = "Like";
                                 }
                             } </script>
-                        <button id="share3" onclick="Shared3()" title = "Share" class="hover-effect btn-style"
+                        <button id="share3" onclick="Shared3()" title="Share" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared3() {
@@ -298,7 +300,8 @@
                     Although I still enjoy Western music, I find myself more drawn to the style, energy,
                     and emotion of K-pop and OPM songs. Some of my favorite artists recently include
                     DAY6, TWICE, Maki, and Cup of Joe.
-                    It’s funny how their music affects my mood. I can be totally happy one minute and unexpectedly sad the next, all depending on the song.
+                    It’s funny how their music affects my mood. I can be totally happy one minute and unexpectedly sad
+                    the next, all depending on the song.
                 </p>
 
             </div>
@@ -318,13 +321,13 @@
                                 var liked4 = document.getElementById('like4');
                                 if (liked4.style.backgroundImage.includes("images/like-white.jpg")) {
                                     liked4.style.backgroundImage = 'url("images/like-cyan.jpg")';
-                                    liked4.title="Unlike";
+                                    liked4.title = "Unlike";
                                 } else {
                                     liked4.style.backgroundImage = 'url("images/like-white.jpg")';
-                                    liked4.title="Like";
+                                    liked4.title = "Like";
                                 }
                             } </script>
-                        <button id="share4" onclick="Shared4()" title = "Share" class="hover-effect btn-style"
+                        <button id="share4" onclick="Shared4()" title="Share" class="hover-effect btn-style"
                             style='background-image:url("images/share-white.jpg")'></button>
                         <script>
                             function Shared4() {
@@ -392,17 +395,18 @@
     </section>
     <section id="contact-info">
         <h1>CONTACT INFORMATION</h1>
-        <p>You can reach me by contacting me on my email and following me on my social media: </p>
         <div>
-            <p>Email: <a href="#">jgpinto@example.com</a></p>
-            <p>Tiktok: <a href="#">@jgpinto</a></p>
-            <p>Twitter/X: <a href="#">@jgpinto</a></p>
-            <p>Facebook: <a href="#">@jgpinto</a></p>
+            <p>You can reach me by contacting me on my email and following me on my social media: </p>
+            <div class="socmed">
+            <p><img class="icon" src="images/1.png">Email: <a href="#">jgpinto@example.com</a></p>
+            <p><img class="icon" src="images/2.png">Facebook: <a href="#">@jgpintoExample</a></p>
+            <p><img class="icon" src="images/3.png">Twitter/X: <a href="#">@jgpintoExample</a></p>
+            <p><img class="icon" src="images/4.png">Tiktok: <a href="#">@jgpintoExample</a></p>
+        </div>
         </div>
     </section>
-    <footer>
-       Mini-Project submitted by J | March 2026
-    </footer>
 </body>
-
+<footer>
+    Mini-Project submitted by Jherwin G. Pinto, 2018-06926, MIS | March 2026 | <a href="placeholders/references.html">Image Sources</a>
+</footer>
 </html>
