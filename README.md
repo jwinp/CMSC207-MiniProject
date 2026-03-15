@@ -21,7 +21,7 @@ WINstagram is a basic personal web profile mini-project built as a single-page w
 This project demonstrates the use of HTML, CSS, and JavaScript to create a visually appealing, interactive, and mobile-friendly webpage.
 
 ---
-##**GitHub Repository Link**
+## **GitHub Repository Link**
 
 View the reposiorty here: https://github.com/jwinp/CMSC207-MiniProject.git
 
