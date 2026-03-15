@@ -9,7 +9,7 @@
 
 ## **Project Overview**
 
-WINstagram is a basic personal web profile mini-project built as a single-page website using HTML, CSS and JavScript. It showcases:
+WINstagram is a basic personal web profile mini-project built as a single-page website using HTML, CSS and JavaScript. It showcases:
 
 - Navigation menu with placeholder links.
 - About Me section with a profile image and dynamic fun fact button.
